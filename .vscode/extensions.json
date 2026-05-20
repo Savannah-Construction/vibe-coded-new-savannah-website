@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-vscode.live-server",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github"
+  ]
+}
