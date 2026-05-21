@@ -1,1 +1,5 @@
-{"editor.formatOnSave":true,"files.eol":"\n","livePreview.defaultPreviewPath":"/index.html"}
+{
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "livePreview.defaultPreviewPath": "/index.html"
+}

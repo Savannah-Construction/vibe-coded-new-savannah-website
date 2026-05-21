@@ -1,3 +1,4 @@
+# Do not commit raw source files, server logs or secrets
 source-assets-do-not-commit/*
 !source-assets-do-not-commit/README.md
 logs/

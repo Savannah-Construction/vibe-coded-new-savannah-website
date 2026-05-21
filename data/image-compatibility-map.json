@@ -1,0 +1,230 @@
+[
+  {
+    "live_path": "img/commercial/tamahrmbcare/a.webp",
+    "copied_from": "img/tcc/1.webp",
+    "status": "ok",
+    "note": "Exact visual match to live Tamahere hero/portfolio image."
+  },
+  {
+    "live_path": "img/commercial/waikatothepa/a.jpg",
+    "copied_from": "img/pa.jpg",
+    "status": "ok",
+    "note": "Exact visual match to live The Pā image."
+  },
+  {
+    "live_path": "img/commercial/novotelhamilton/a.jpg",
+    "copied_from": "img/nh1.jpg",
+    "status": "ok",
+    "note": "Closest supplied Novotel/Hospitality image. Live room image was not in the supplied zip under an obvious filename."
+  },
+  {
+    "live_path": "img/commercial/rotoruaaquatic/a.jpg",
+    "copied_from": "img/r11.jpg",
+    "status": "ok",
+    "note": "Exact visual match to live Rotorua Aquatic image."
+  },
+  {
+    "live_path": "img/commercial/cambridgepools/a.jpg",
+    "copied_from": "img/c1.jpg",
+    "status": "ok",
+    "note": "Supplied Cambridge Pool image. Live image differs but this is the matching supplied project asset."
+  },
+  {
+    "live_path": "img/commercial/silverdalestudios/a.jpg",
+    "copied_from": "img/s1.jpg",
+    "status": "ok",
+    "note": "Supplied Silverdale Student Apartments image. Live image differs but this is matching supplied project asset."
+  },
+  {
+    "live_path": "img/commercial/texaschicken/a.webp",
+    "copied_from": "img/tx.png",
+    "status": "ok",
+    "note": "Supplied Texas Chicken image; extension copied for compatibility."
+  },
+  {
+    "live_path": "img/commercial/bupastagetwo/a.jpg",
+    "copied_from": "img/gallery4.png",
+    "status": "ok",
+    "note": "Closest supplied care facility/interior asset."
+  },
+  {
+    "live_path": "img/commercial/rototunahighschool/a.webp",
+    "copied_from": "img/rh.webp",
+    "status": "ok",
+    "note": "Exact visual match to live Rototuna image."
+  },
+  {
+    "live_path": "img/commercial/springhillprison/a.webp",
+    "copied_from": "img/sp.webp",
+    "status": "ok",
+    "note": "Exact visual match to live Spring Hill image."
+  },
+  {
+    "live_path": "img/commercial/accbuilding/a.jpg",
+    "copied_from": "img/commercial/ACC.jpg",
+    "status": "ok",
+    "note": "Supplied ACC project asset."
+  },
+  {
+    "live_path": "img/commercial/lauristonvillas/a.webp",
+    "copied_from": "img/commercial/lauriston.webp",
+    "status": "ok",
+    "note": "Supplied Lauriston project asset."
+  },
+  {
+    "live_path": "img/commercial/alphastreet/a.webp",
+    "copied_from": "img/commercial/alpha.webp",
+    "status": "ok",
+    "note": "Supplied Alpha Street project asset."
+  },
+  {
+    "live_path": "img/commercial/victoriastreet/a.png",
+    "copied_from": "img/commercial/victoria.PNG",
+    "status": "ok",
+    "note": "Supplied Victoria Street project asset."
+  },
+  {
+    "live_path": "img/commercial/awaterrmbone/a.jpg",
+    "copied_from": "img/commercial/2awatere.JPG",
+    "status": "ok",
+    "note": "Supplied Awatere asset."
+  },
+  {
+    "live_path": "img/commercial/woolworthsotorohanga/a.jpg",
+    "copied_from": "img/commercial/woolworths.jpg",
+    "status": "ok",
+    "note": "Supplied Woolworths asset."
+  },
+  {
+    "live_path": "img/commercial/watchusecurity/a.jpg",
+    "copied_from": "img/commercial/watchu.jpg",
+    "status": "ok",
+    "note": "Supplied Watchu Security asset."
+  },
+  {
+    "live_path": "img/commercial/fonterradryerwall/a.jpg",
+    "copied_from": "img/commercial/fonterra.jpg",
+    "status": "ok",
+    "note": "Supplied Fonterra asset. Live site uses .avif, supplied zip uses .jpg."
+  },
+  {
+    "live_path": "img/commercial/olamtokoroa/a.jpg",
+    "copied_from": "img/commercial/olam.jpg",
+    "status": "ok",
+    "note": "Supplied Olam asset."
+  },
+  {
+    "live_path": "img/commercial/anzbuilding/a.jpg",
+    "copied_from": "img/commercial/anz.JPG",
+    "status": "ok",
+    "note": "Supplied ANZ asset."
+  },
+  {
+    "live_path": "img/commercial/mitreten/a.jpg",
+    "copied_from": "img/commercial/mitre.jpg",
+    "status": "ok",
+    "note": "Supplied Mitre 10 asset."
+  },
+  {
+    "live_path": "img/commercial/tauharapower/a.jpg",
+    "copied_from": "img/commercial/tauhara.jpg",
+    "status": "ok",
+    "note": "Supplied Tauhara asset."
+  },
+  {
+    "live_path": "img/commercial/tehukathreepower/a.jpg",
+    "copied_from": "img/commercial/tauhara1.jpg",
+    "status": "ok",
+    "note": "Supplied Te Huka / power station asset."
+  },
+  {
+    "live_path": "img/commercial/kaipakiberries/a.webp",
+    "copied_from": "img/commercial/kaipaki.webp",
+    "status": "ok",
+    "note": "Supplied Kaipaki asset."
+  },
+  {
+    "live_path": "img/commercial/affconewoffice/a.webp",
+    "copied_from": "img/commercial/affconewoffice/a.webp",
+    "status": "missing-source",
+    "note": "Path exists if supplied; otherwise use original if available."
+  },
+  {
+    "live_path": "img/commercial/affconewoffice/a.webp",
+    "copied_from": "img/commercial/affconewoffice/a.webp",
+    "status": "missing-source",
+    "note": "No-op placeholder"
+  },
+  {
+    "live_path": "img/commercial/mahoestreet/a.webp",
+    "copied_from": "img/commercial/anz.webp",
+    "status": "ok",
+    "note": "Fallback supplied building interior for Mahoe Street because live path 404s and no obvious project image was supplied."
+  },
+  {
+    "live_path": "img/commercial/cambridgeretirement/a.jpg",
+    "copied_from": "img/commercial/watchu1.jpg",
+    "status": "ok",
+    "note": "Fallback supplied commercial interior because live path 404s and no obvious retirement image was supplied."
+  },
+  {
+    "live_path": "img/commercial/breakingbreadcafe/a.jpg",
+    "copied_from": "img/commercial/victoria1.JPG",
+    "status": "ok",
+    "note": "Fallback supplied interior because matching café image was not obvious in supplied zip."
+  },
+  {
+    "live_path": "img/team/matt-bw.jpg",
+    "copied_from": "img/team/matt-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/joe1.jpg",
+    "copied_from": "img/team/joe1.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/eddie-bw.jpg",
+    "copied_from": "img/team/eddie-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/andre-bw.jpg",
+    "copied_from": "img/team/andre-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/james-bw.png",
+    "copied_from": "img/team/james-bw.png",
+    "status": "exists",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/kiel-bw.jpg",
+    "copied_from": "img/team/kiel-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/bradley-bw.jpg",
+    "copied_from": "img/team/bradley-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/matija-bw.jpg",
+    "copied_from": "img/team/matija-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  },
+  {
+    "live_path": "img/team/lyn-bw.jpg",
+    "copied_from": "img/team/lyn-bw.JPG",
+    "status": "ok",
+    "note": "Lower-case compatibility copy for case-sensitive servers."
+  }
+]

@@ -1,219 +1,188 @@
 [
   {
-    "name": "Tamahere Country Club",
+    "title": "Tamahere Country Club",
     "client": "Sanderson Group",
     "sector": "Hospitality",
-    "image": "assets/img/projects/tamahere-country-club.webp",
-    "featured": true
+    "image": "img/commercial/tamahrmbcare/a.webp"
   },
   {
-    "name": "University of Waikato - The Pa",
-    "client": "",
-    "sector": "Education",
-    "image": "assets/img/projects/waikato-the-pa.jpg",
-    "featured": true
-  },
-  {
-    "name": "Novotel Hamilton - Extension",
-    "client": "Naylor Love",
-    "sector": "Hospitality",
-    "image": "assets/img/projects/novotel-hamilton.png",
-    "featured": true
-  },
-  {
-    "name": "Rotorua Aquatic Centre",
+    "title": "Rotorua Aquatic Centre",
     "client": "",
     "sector": "Recreation",
-    "image": "assets/img/projects/rotorua-aquatic-centre.jpg",
-    "featured": true
+    "image": "img/commercial/rotoruaaquatic/a.jpg"
   },
   {
-    "name": "Cambridge Pool",
+    "title": "Cambridge Pool",
     "client": "Naylor Love",
     "sector": "Recreation",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/cambridgepools/a.jpg"
   },
   {
-    "name": "Silverdale Student Apartments",
+    "title": "Silverdale Student Apartments",
     "client": "",
     "sector": "Residential",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/silverdalestudios/a.jpg"
   },
   {
-    "name": "Texas Chicken",
+    "title": "Novotel Hamilton - Extension",
+    "client": "Naylor Love",
+    "sector": "Hospitality",
+    "image": "img/commercial/novotelhamilton/a.jpg"
+  },
+  {
+    "title": "Texas Chicken",
     "client": "",
     "sector": "Commercial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/texaschicken/a.webp"
   },
   {
-    "name": "Bupa Stage 2 Care Facility – Renovation",
+    "title": "Bupa Stage 2 Care Facility – Renovation",
     "client": "",
     "sector": "Healthcare",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/bupastagetwo/a.jpg"
   },
   {
-    "name": "Rototuna Highschool",
+    "title": "Rototuna Highschool",
     "client": "",
     "sector": "Education",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/rototunahighschool/a.webp"
   },
   {
-    "name": "Hopuhopu Sports Pavilion",
+    "title": "University of Waikato - The Pā",
+    "client": "",
+    "sector": "Education",
+    "image": "img/commercial/waikatothepa/a.jpg"
+  },
+  {
+    "title": "Hopuhopu Sports Pavilion",
     "client": "",
     "sector": "Community",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/hopuhopusports/a.webp"
   },
   {
-    "name": "Spring Hill Prison",
+    "title": "Spring Hill Prison",
     "client": "Hawkins",
     "sector": "Public",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/springhillprison/a.webp"
   },
   {
-    "name": "ACC Building",
+    "title": "ACC Building",
     "client": "",
     "sector": "Commercial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/accbuilding/a.jpg"
   },
   {
-    "name": "Summerset Cambridge Villas",
+    "title": "Summerset Cambridge Villas",
     "client": "",
     "sector": "Residential",
-    "image": "",
-    "featured": false
+    "image": "img/gallery2.png"
   },
   {
-    "name": "Lauriston Villas - Retirement Village",
-    "client": "",
-    "sector": "Residential",
-    "image": "",
-    "featured": false
-  },
-  {
-    "name": "Alpha Street – Mixed-Use Development",
-    "client": "",
-    "sector": "Mixed-use",
-    "image": "",
-    "featured": false
-  },
-  {
-    "name": "Victoria Street – Mixed-Use Development",
-    "client": "",
-    "sector": "Mixed-use",
-    "image": "",
-    "featured": false
-  },
-  {
-    "name": "Awatere Retirement Village Stage 1",
+    "title": "Lauriston Villas - Retirement Village",
     "client": "",
     "sector": "Retirement",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/lauristonvillas/a.webp"
   },
   {
-    "name": "Awatere Retirement Village Stage 2",
+    "title": "Alpha Street – Mixed-Use Development",
+    "client": "",
+    "sector": "Mixed-use",
+    "image": "img/commercial/alphastreet/a.webp"
+  },
+  {
+    "title": "Victoria Street – Mixed-Use Development",
+    "client": "",
+    "sector": "Mixed-use",
+    "image": "img/commercial/victoriastreet/a.png"
+  },
+  {
+    "title": "Awatere Retirement Village Stage 1",
     "client": "",
     "sector": "Retirement",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/awaterrmbone/a.jpg"
   },
   {
-    "name": "Woolworths Otorohanga",
+    "title": "Awatere Retirement Village Stage 2",
+    "client": "",
+    "sector": "Retirement",
+    "image": "img/commercial/awaterrmbone/a.jpg"
+  },
+  {
+    "title": "Woolworths Otorohanga",
     "client": "",
     "sector": "Retail",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/woolworthsotorohanga/a.jpg"
   },
   {
-    "name": "Watchu Security – Head Office",
+    "title": "Watchu Security – Head Office",
     "client": "",
     "sector": "Commercial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/watchusecurity/a.jpg"
   },
   {
-    "name": "Fonterra D4 Dryer Wall",
+    "title": "Fonterra D4 Dryer Wall",
     "client": "",
     "sector": "Industrial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/fonterradryerwall/a.jpg"
   },
   {
-    "name": "Olam Tokoroa - Workshop",
+    "title": "Olam Tokoroa - Workshop",
     "client": "",
     "sector": "Industrial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/olamtokoroa/a.jpg"
   },
   {
-    "name": "ANZ Building – Fit Outs",
+    "title": "ANZ Building – Fit Outs",
     "client": "",
     "sector": "Fit-out",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/anzbuilding/a.jpg"
   },
   {
-    "name": "Mitre 10 – Renovation",
+    "title": "Mitre 10 – Renovation",
     "client": "",
     "sector": "Retail",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/mitreten/a.jpg"
   },
   {
-    "name": "Tauhara Power Station",
+    "title": "Tauhara Power Station",
     "client": "",
     "sector": "Industrial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/tauharapower/a.jpg"
   },
   {
-    "name": "Te Huka 3 Power Station",
+    "title": "Te Huka 3 Power Station",
     "client": "",
     "sector": "Industrial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/tehukathreepower/a.jpg"
   },
   {
-    "name": "Kaipaki Berries",
+    "title": "Kaipaki Berries",
     "client": "",
     "sector": "Commercial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/kaipakiberries/a.webp"
   },
   {
-    "name": "Mahoe Street",
+    "title": "Mahoe Street",
     "client": "",
     "sector": "Residential",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/mahoestreet/a.webp"
   },
   {
-    "name": "Affco – New Office",
+    "title": "Affco – New Office",
     "client": "",
     "sector": "Commercial",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/affconewoffice/a.webp"
   },
   {
-    "name": "Breaking Bread Café – Ngāruawāhia",
+    "title": "Breaking Bread Café – Ngāruawāhia",
     "client": "",
     "sector": "Hospitality",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/breakingbreadcafe/a.jpg"
   },
   {
-    "name": "Cambridge Retirement Village",
+    "title": "Cambridge Retirement Village",
     "client": "",
     "sector": "Retirement",
-    "image": "",
-    "featured": false
+    "image": "img/commercial/cambridgeretirement/a.jpg"
   }
 ]
