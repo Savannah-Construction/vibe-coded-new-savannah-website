@@ -10,22 +10,9 @@ Do not enable automatic live deployment until:
 
 ## Required hosting details
 
-Get these from the web host:
-
 ```text
 SSH_HOST
 SSH_USER
 SSH_PORT
 REMOTE_PATH
 ```
-
-Also confirm whether SSH key login is supported.
-
-## Enabling deployment later
-
-1. Copy `deployment/deploy-to-server.yml.example`.
-2. Paste it into `.github/workflows/deploy.yml`.
-3. Add the required GitHub repository secrets.
-4. Commit and push to `main`.
-
-After that, pushes to `main` can deploy automatically.

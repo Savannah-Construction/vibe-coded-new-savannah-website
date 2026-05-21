@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://savannahconstruction.co.nz/</loc></url>
-  <url><loc>https://savannahconstruction.co.nz/pages/about.html</loc></url>
-  <url><loc>https://savannahconstruction.co.nz/pages/services.html</loc></url>
-  <url><loc>https://savannahconstruction.co.nz/pages/projects.html</loc></url>
-  <url><loc>https://savannahconstruction.co.nz/pages/contact.html</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/projects.html</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/team.html</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/contact.html</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/blog.html</loc></url>
+  <url><loc>https://www.savannahconstruction.co.nz/community-support.html</loc></url>
 </urlset>

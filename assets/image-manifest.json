@@ -1,0 +1,86 @@
+{
+  "image_root": "assets/img",
+  "notes": [
+    "All images used by the current HTML/CSS have been copied from the supplied zip into assets/img.",
+    "Do not commit raw CR3 files, logs, database files, videos or old zip exports.",
+    "The previous live-site remote image URLs have been replaced with local relative paths.",
+    "The exact live Novotel selected-work image was not present by that filename in the supplied zip, so assets/img/projects/novotel-hamilton.png uses img/gallery2.png from the supplied zip as the local placeholder."
+  ],
+  "used_images": [
+    {
+      "source_zip_path": "img/backlogo.png",
+      "repo_path": "assets/img/brand/backlogo.png",
+      "size_bytes": 27326
+    },
+    {
+      "source_zip_path": "img/favicon.png",
+      "repo_path": "assets/img/icons/favicon.png",
+      "size_bytes": 10841
+    },
+    {
+      "source_zip_path": "img/tcc/1.webp",
+      "repo_path": "assets/img/projects/tamahere-country-club.webp",
+      "size_bytes": 218512
+    },
+    {
+      "source_zip_path": "img/pa.jpg",
+      "repo_path": "assets/img/projects/waikato-the-pa.jpg",
+      "size_bytes": 460878
+    },
+    {
+      "source_zip_path": "img/gallery2.png",
+      "repo_path": "assets/img/projects/novotel-hamilton.png",
+      "size_bytes": 1305654
+    },
+    {
+      "source_zip_path": "img/r11.jpg",
+      "repo_path": "assets/img/projects/rotorua-aquatic-centre.jpg",
+      "size_bytes": 220604
+    },
+    {
+      "source_zip_path": "img/team/matt-bw.JPG",
+      "repo_path": "assets/img/team/matt-mudgway.jpg",
+      "size_bytes": 127442
+    },
+    {
+      "source_zip_path": "img/team/joe1.JPG",
+      "repo_path": "assets/img/team/joe-tawha.jpg",
+      "size_bytes": 4576554
+    },
+    {
+      "source_zip_path": "img/team/eddie-bw.JPG",
+      "repo_path": "assets/img/team/eddie-alford.jpg",
+      "size_bytes": 105322
+    },
+    {
+      "source_zip_path": "img/team/andre-bw.JPG",
+      "repo_path": "assets/img/team/andre-joli.jpg",
+      "size_bytes": 94082
+    },
+    {
+      "source_zip_path": "img/team/james-color.png",
+      "repo_path": "assets/img/team/james-palmer.png",
+      "size_bytes": 298088
+    },
+    {
+      "source_zip_path": "img/team/kiel-bw.JPG",
+      "repo_path": "assets/img/team/kiel-harrison.jpg",
+      "size_bytes": 2744352
+    },
+    {
+      "source_zip_path": "img/team/bradley-bw.JPG",
+      "repo_path": "assets/img/team/bradley-laird.jpg",
+      "size_bytes": 4577673
+    },
+    {
+      "source_zip_path": "img/team/matija-bw.JPG",
+      "repo_path": "assets/img/team/matija-miletic.jpg",
+      "size_bytes": 106650
+    },
+    {
+      "source_zip_path": "img/team/lyn-bw.png",
+      "repo_path": "assets/img/team/lyn-mudgway.png",
+      "size_bytes": 1222227
+    }
+  ]
+}

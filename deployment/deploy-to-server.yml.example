@@ -1,12 +1,5 @@
-# Example only.
-# Do not copy this into .github/workflows/deploy.yml until the live server details are confirmed.
-#
-# Required GitHub repository secrets:
-# SSH_HOST
-# SSH_USER
-# SSH_PORT
-# SSH_PRIVATE_KEY
-# REMOTE_PATH
+# Example only. Do not copy this into .github/workflows/deploy.yml until live server details are confirmed.
+# Required secrets: SSH_HOST, SSH_USER, SSH_PORT, SSH_PRIVATE_KEY, REMOTE_PATH
 
 name: Deploy website
 
@@ -18,37 +11,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Install rsync and SSH client
         run: |
           sudo apt-get update
           sudo apt-get install -y rsync openssh-client
-
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
-
       - name: Deploy to server
         run: |
-          rsync -avz --delete \
-            --exclude ".git/" \
-            --exclude ".github/" \
-            --exclude "deployment/" \
-            --exclude "docs/" \
-            --exclude "source-assets-do-not-commit/" \
-            --exclude "*.CR3" \
-            --exclude "*.MOV" \
-            --exclude "*.MP4" \
-            --exclude "*.zip" \
-            --exclude "*.log" \
-            --exclude "*.db" \
-            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT }}" \
-            ./ \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}
+          rsync -avz --delete --exclude ".git/" --exclude ".github/" --exclude "deployment/" --exclude "docs/" --exclude "source-assets-do-not-commit/" -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT }}" ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}

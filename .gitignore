@@ -1,50 +1,31 @@
-# Raw source dumps and temporary files
 source-assets-do-not-commit/*
 !source-assets-do-not-commit/README.md
-
-# Logs
 logs/
 *.log
-
-# Local databases / exports
 *.db
 *.sqlite
 *.sqlite3
 *.sql
-
-# Raw camera files
 *.CR2
 *.CR3
 *.NEF
 *.ARW
 *.DNG
-
-# Large media files
 *.MOV
 *.MP4
 *.AVI
 *.MKV
-
-# Archives
 *.zip
 *.7z
 *.rar
-
-# Secrets
 .env
 .env.*
 *.pem
 *.key
-
-# Dependencies / build outputs
 node_modules/
 dist/
 build/
-
-# OS files
 .DS_Store
 Thumbs.db
-
-# Editor temp files
 *.swp
 *.tmp

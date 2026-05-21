@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Matt Mudgway",
+    "role": "Director",
+    "email": "matt@savannahconstruction.co.nz",
+    "image": "assets/img/team/matt-mudgway.jpg"
+  },
+  {
+    "name": "Joe Tawha",
+    "role": "General Manager",
+    "email": "joe@savannahconstruction.co.nz",
+    "image": "assets/img/team/joe-tawha.jpg"
+  },
+  {
+    "name": "Eddie Alford",
+    "role": "Finance Manager",
+    "email": "eddie@savannahconstruction.co.nz",
+    "image": "assets/img/team/eddie-alford.jpg"
+  },
+  {
+    "name": "Andre Joli",
+    "role": "QS & Contracts",
+    "email": "andre@savannahconstruction.co.nz",
+    "image": "assets/img/team/andre-joli.jpg"
+  },
+  {
+    "name": "James Palmer",
+    "role": "Project Manager",
+    "email": "james@savannahconstruction.co.nz",
+    "image": "assets/img/team/james-palmer.png"
+  },
+  {
+    "name": "Kiel Harrison",
+    "role": "Project Manager",
+    "email": "kiel@savannahconstruction.co.nz",
+    "image": "assets/img/team/kiel-harrison.jpg"
+  },
+  {
+    "name": "Bradley Laird",
+    "role": "Quantity Surveyor",
+    "email": "bradley@savannahconstruction.co.nz",
+    "image": "assets/img/team/bradley-laird.jpg"
+  },
+  {
+    "name": "Matija Miletic",
+    "role": "Procurement Officer",
+    "email": "matija@savannahconstruction.co.nz",
+    "image": "assets/img/team/matija-miletic.jpg"
+  },
+  {
+    "name": "Lyn Mudgway",
+    "role": "H&S Manager",
+    "email": "lyn@savannahconstruction.co.nz",
+    "image": "assets/img/team/lyn-mudgway.png"
+  }
+]

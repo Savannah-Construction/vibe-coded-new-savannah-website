@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Tamahere Country Club",
+    "client": "Sanderson Group",
+    "sector": "Hospitality",
+    "image": "assets/img/projects/tamahere-country-club.webp",
+    "featured": true
+  },
+  {
+    "name": "University of Waikato - The Pa",
+    "client": "",
+    "sector": "Education",
+    "image": "assets/img/projects/waikato-the-pa.jpg",
+    "featured": true
+  },
+  {
+    "name": "Novotel Hamilton - Extension",
+    "client": "Naylor Love",
+    "sector": "Hospitality",
+    "image": "assets/img/projects/novotel-hamilton.png",
+    "featured": true
+  },
+  {
+    "name": "Rotorua Aquatic Centre",
+    "client": "",
+    "sector": "Recreation",
+    "image": "assets/img/projects/rotorua-aquatic-centre.jpg",
+    "featured": true
+  },
+  {
+    "name": "Cambridge Pool",
+    "client": "Naylor Love",
+    "sector": "Recreation",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Silverdale Student Apartments",
+    "client": "",
+    "sector": "Residential",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Texas Chicken",
+    "client": "",
+    "sector": "Commercial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Bupa Stage 2 Care Facility – Renovation",
+    "client": "",
+    "sector": "Healthcare",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Rototuna Highschool",
+    "client": "",
+    "sector": "Education",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Hopuhopu Sports Pavilion",
+    "client": "",
+    "sector": "Community",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Spring Hill Prison",
+    "client": "Hawkins",
+    "sector": "Public",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "ACC Building",
+    "client": "",
+    "sector": "Commercial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Summerset Cambridge Villas",
+    "client": "",
+    "sector": "Residential",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Lauriston Villas - Retirement Village",
+    "client": "",
+    "sector": "Residential",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Alpha Street – Mixed-Use Development",
+    "client": "",
+    "sector": "Mixed-use",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Victoria Street – Mixed-Use Development",
+    "client": "",
+    "sector": "Mixed-use",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Awatere Retirement Village Stage 1",
+    "client": "",
+    "sector": "Retirement",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Awatere Retirement Village Stage 2",
+    "client": "",
+    "sector": "Retirement",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Woolworths Otorohanga",
+    "client": "",
+    "sector": "Retail",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Watchu Security – Head Office",
+    "client": "",
+    "sector": "Commercial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Fonterra D4 Dryer Wall",
+    "client": "",
+    "sector": "Industrial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Olam Tokoroa - Workshop",
+    "client": "",
+    "sector": "Industrial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "ANZ Building – Fit Outs",
+    "client": "",
+    "sector": "Fit-out",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Mitre 10 – Renovation",
+    "client": "",
+    "sector": "Retail",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Tauhara Power Station",
+    "client": "",
+    "sector": "Industrial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Te Huka 3 Power Station",
+    "client": "",
+    "sector": "Industrial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Kaipaki Berries",
+    "client": "",
+    "sector": "Commercial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Mahoe Street",
+    "client": "",
+    "sector": "Residential",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Affco – New Office",
+    "client": "",
+    "sector": "Commercial",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Breaking Bread Café – Ngāruawāhia",
+    "client": "",
+    "sector": "Hospitality",
+    "image": "",
+    "featured": false
+  },
+  {
+    "name": "Cambridge Retirement Village",
+    "client": "",
+    "sector": "Retirement",
+    "image": "",
+    "featured": false
+  }
+]
