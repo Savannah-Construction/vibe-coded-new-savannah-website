@@ -1,89 +1,179 @@
 <!doctype html>
-<html lang="en-NZ">
+<html lang="en-NZ" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Savannah Construction</title>
+  <title>Savannah Construction | Contact</title>
   <meta name="description" content="Contact Savannah Construction in Cambridge, Waikato.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('savannah-theme');
+        document.documentElement.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }());
+  </script>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="site.webmanifest">
-  
 </head>
-<body>
-
+<body class="contact">
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Savannah Construction home"><img src="img/backlogo.png" alt="Savannah Construction"></a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span>☰</button>
+  <a class="brand" href="index.html" aria-label="Savannah Construction home">
+    <img src="img/backlogo.png" alt="Savannah Construction">
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span aria-hidden="true">☰</span></button>
   <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="team.html">Team</a>
-    <a href="blog.html">Blog</a>
-    <a class="nav-cta" href="contact.html">Contact</a>
+    <a href="index.html" class="">Home</a>
+<a href="projects.html" class="">Projects</a>
+<a href="team.html" class="">Team</a>
+<a href="blog.html" class="">Blog</a>
+<a href="contact.html" class="active">Contact</a>
   </nav>
-  <div class="header-contact"><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a><a href="tel:0800006007">0800 006 007</a></div>
+  <div class="header-contact">
+    <div class="header-contact-links">
+      <a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a>
+      <a href="tel:0800006007">0800 006 007</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+      <span class="theme-icon-wrap" aria-hidden="true">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+          <path d="M20.3 15.6A8.3 8.3 0 0 1 8.4 3.7 8.7 8.7 0 1 0 20.3 15.6Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.2v2.2M12 19.6v2.2M4.4 4.4 6 6M18 18l1.6 1.6M2.2 12h2.2M19.6 12h2.2M4.4 19.6 6 18M18 6l1.6-1.6" />
+        </svg>
+      </span>
+    </button>
+  </div>
 </header>
 <main>
 
 <section class="page-hero contact-hero">
-  <p class="eyebrow">Contact</p>
-  <h1>Get In Touch.</h1>
-  <p class="lead">Call or text 0800 006 007. If we do not answer, send us a text.</p>
-</section>
-<section class="section split">
-  <div class="contact-panel">
-    <h2>Headquarters</h2><p>26 Dick Street<br>Cambridge</p>
-    <h2>Hours</h2><p>Mon - Fri<br>8 am - 5 pm</p>
-    <h2>Phone</h2><p><a href="tel:0800006007">0800 006 007</a></p>
-    <h2>Email</h2><p><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a></p>
-    <p class="muted">Cambridge, NZ</p>
+  <div class="page-hero-inner">
+    <p class="eyebrow">Contact</p>
+    <h1>Get In Touch.</h1>
+    <p class="lead">Call or text 0800 006 007. If we do not answer, send us a text.</p>
   </div>
-  <form class="contact-form" action="mailto:info@savannahconstruction.co.nz" method="post" enctype="text/plain">
+</section>
+<section class="section contact-main-grid equal-grid">
+  <article class="contact-panel">
+    <p class="eyebrow">Headquarters</p>
+    <h2>26 Dick Street, Cambridge</h2>
+    <div class="contact-detail-list">
+      <p><span class="gold-icon" aria-hidden="true">⌂</span><strong>Hours</strong><br>Mon - Fri, 8 am - 5 pm</p>
+      <p><span class="gold-icon" aria-hidden="true">●</span><strong>Phone</strong><br><a href="tel:0800006007">0800 006 007</a></p>
+      <p><span class="gold-icon" aria-hidden="true">●</span><strong>Email</strong><br><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a></p>
+    </div>
+  </article>
+  <article class="map-card contact-map-card">
+    <iframe title="Map showing Savannah Construction office at 26 Dick Street, Cambridge" loading="lazy" src="https://www.google.com/maps?q=26%20Dick%20Street%2C%20Cambridge%2C%20New%20Zealand&z=15&output=embed"></iframe>
+  </article>
+  <form class="contact-form" data-consultation-form data-verification-endpoint="" action="mailto:info@savannahconstruction.co.nz" method="post" enctype="text/plain">
+  <div>
+    <p class="eyebrow">Consultation</p>
     <h2>Start Your Free Consultation</h2>
     <p>Tell us about your project and we will get back to you shortly.</p>
-    <label>Name <input type="text" name="name" autocomplete="name"></label>
-    <label>Email <input type="email" name="email" autocomplete="email"></label>
-    <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
-    <label>Message <textarea name="message" rows="6"></textarea></label>
-    <button class="button button-primary" type="submit">Send</button>
-  </form>
+  </div>
+  <div class="oauth-row" aria-label="Optional sign-in shortcuts">
+    <button type="button" class="oauth-button" data-oauth="google"><span>G</span> Sign in to Google</button>
+    <button type="button" class="oauth-button" data-oauth="microsoft"><span>□</span> Sign in to Microsoft</button>
+  </div>
+  <div class="form-grid two">
+    <label>Name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Email <input type="email" name="email" autocomplete="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"></label>
+  </div>
+  <label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
+  <div class="verify-row">
+    <button type="button" class="button button-secondary verify-button" data-send-code>Send code</button>
+    <label class="verify-code-label">Verification code <input type="text" name="verification_code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" placeholder="6-digit code"></label>
+  </div>
+  <p class="form-note" data-verification-status>Email verification is ready for a server endpoint. In this static preview, the button shows a demo code.</p>
+  <label>Message <textarea name="message" rows="6" required></textarea></label>
+  <button class="button button-primary" type="submit">Send</button>
+</form>
 </section>
-<section class="section">
-  <div class="section-heading"><p class="eyebrow">People</p><h2>Direct contacts</h2></div>
-  <div class="contact-people-grid">
-<article class="contact-person">
-  <img src="img/team/matt-bw.jpg" alt="Matt Mudgway" loading="lazy">
-  <p class="eyebrow">Director</p>
-  <h2>Matt Mudgway</h2>
-  <a class="button button-secondary" href="mailto:matt@savannahconstruction.co.nz">Message Matt</a>
-</article>
-<article class="contact-person">
-  <img src="img/team/joe1.jpg" alt="Joe Tawha" loading="lazy">
-  <p class="eyebrow">General Manager</p>
-  <h2>Joe Tawha</h2>
-  <a class="button button-secondary" href="mailto:joe@savannahconstruction.co.nz">Message Joe</a>
-</article>
-<article class="contact-person">
-  <img src="img/team/eddie-bw.jpg" alt="Eddie Alford" loading="lazy">
-  <p class="eyebrow">Finance Manager</p>
-  <h2>Eddie Alford</h2>
-  <a class="button button-secondary" href="mailto:eddie@savannahconstruction.co.nz">Message Eddie</a>
-</article>
-<article class="contact-person">
-  <img src="img/team/andre-bw.jpg" alt="Andre Joli" loading="lazy">
-  <p class="eyebrow">QS &amp; Contracts</p>
-  <h2>Andre Joli</h2>
-  <a class="button button-secondary" href="mailto:andre@savannahconstruction.co.nz">Message Andre</a>
-</article><article class="contact-person"><img src="img/office.JPG" alt="Savannah office" loading="lazy"><p class="eyebrow">Administration</p><h2>Office</h2><a class="button button-secondary" href="mailto:info@savannahconstruction.co.nz">Message Us</a></article></div>
+<section class="section connect-section" id="connect">
+  <div class="section-heading centre">
+    <p class="eyebrow">Digital Channels</p>
+    <h2>Connect with us</h2>
+  </div>
+  <div class="connect-layout">
+    <article class="connect-card map-card">
+      <iframe title="Map showing Savannah Construction office at 26 Dick Street, Cambridge" loading="lazy" src="https://www.google.com/maps?q=26%20Dick%20Street%2C%20Cambridge%2C%20New%20Zealand&z=15&output=embed"></iframe>
+      <div class="map-overlay">
+        <p class="eyebrow">Google Business Review</p>
+        <strong>5.0</strong>
+        <span>★★★★★</span>
+        <a class="button button-secondary" href="https://maps.google.com/?q=26+Dick+Street+Cambridge" target="_blank" rel="noopener">Open on Google Maps</a>
+      </div>
+    </article>
+    <article class="connect-card social-live-card">
+      <p class="eyebrow">Live Updates</p>
+      <h3>Latest digital channel activity</h3>
+      <div class="social-update-grid"><article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>1</span><strong>Latest Instagram update</strong><em>@savcon.nz</em></a></article>
+<article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>2</span><strong>Previous Instagram update</strong><em>@savcon.nz</em></a></article>
+<article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>3</span><strong>Earlier Instagram update</strong><em>@savcon.nz</em></a></article></div>
+    </article>
+    <article class="connect-card media-card">
+      <p class="eyebrow">YouTube</p>
+      <h3>YouTube channel</h3>
+      <p>Watch recent project footage, site updates and company videos.</p>
+      <a class="button button-primary" href="https://www.youtube.com/@savcon_nz" target="_blank" rel="noopener">Open YouTube channel</a>
+    </article>
+    <article class="connect-card media-card wordpress-card">
+      <p class="eyebrow">WordPress</p>
+      <h3>Latest articles</h3>
+      <div class="mini-link-grid"><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>Behind the Story of The Pā, University of Waikato</strong><span>For developers and investors comparing Building Contractors Waikato, landmark projects often reveal more than finished architecture.</span></a><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>What Makes a Commercial Builder Reliable?</strong><span>Reliability is one of the most important factors in any commercial building project, yet it is also one of the hardest qualities to judge.</span></a><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>How to Reduce Delays on a Multi-Unit Construction Project</strong><span>Delays on a multi-unit project rarely come from one major issue alone. More often, they come from smaller breakdowns in planning.</span></a></div>
+      <a class="button button-secondary" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener">Open WordPress blog</a>
+    </article>
+    <form class="contact-form" data-consultation-form data-verification-endpoint="" action="mailto:info@savannahconstruction.co.nz" method="post" enctype="text/plain">
+  <div>
+    <p class="eyebrow">Consultation</p>
+    <h2>Start Your Free Consultation</h2>
+    <p>Tell us about your project and we will get back to you shortly.</p>
+  </div>
+  <div class="oauth-row" aria-label="Optional sign-in shortcuts">
+    <button type="button" class="oauth-button" data-oauth="google"><span>G</span> Sign in to Google</button>
+    <button type="button" class="oauth-button" data-oauth="microsoft"><span>□</span> Sign in to Microsoft</button>
+  </div>
+  <div class="form-grid two">
+    <label>Name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Email <input type="email" name="email" autocomplete="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"></label>
+  </div>
+  <label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
+  <div class="verify-row">
+    <button type="button" class="button button-secondary verify-button" data-send-code>Send code</button>
+    <label class="verify-code-label">Verification code <input type="text" name="verification_code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" placeholder="6-digit code"></label>
+  </div>
+  <p class="form-note" data-verification-status>Email verification is ready for a server endpoint. In this static preview, the button shows a demo code.</p>
+  <label>Message <textarea name="message" rows="6" required></textarea></label>
+  <button class="button button-primary" type="submit">Send</button>
+</form>
+  </div>
+</section>
+<section class="section accreditations-section">
+  <div class="section-heading centre">
+    <p class="eyebrow">Assurances</p>
+    <h2>Our Accreditations & Assurances</h2>
+  </div>
+  <div class="badge-grid">
+    <img src="img/accreditations/master-builders.svg" alt="Master Builders">
+    <img src="img/accreditations/sitewise-gold.svg" alt="SiteWise Gold 2026/27">
+    <img src="img/accreditations/sitesafe.svg" alt="SiteSafe">
+    <img src="img/accreditations/lbp.svg" alt="Licensed Building Practitioner support">
+  </div>
+  <p class="insurance-pill">$20M Public Liability Insurance</p>
 </section>
 
 </main>
-
 <footer class="site-footer">
   <div class="footer-brand">
     <img src="img/backlogo.png" alt="Savannah Construction">
-    <p>Award-winning Waikato construction company delivering premium property construction and building services.</p>
+    <p>Award-winning Waikato construction company delivering premium commercial and residential construction services.</p>
   </div>
   <div>
     <h2>Accreditations</h2>
@@ -95,24 +185,16 @@
   </div>
   <div>
     <h2>Connect with us</h2>
-    <ul>
-      <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
-      <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
-      <li><a href="https://savannahconstruction.wordpress.com/" rel="noopener">WordPress</a></li>
-      <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-    </ul>
+    <ul class="footer-links"><li><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@savcon.nz" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.facebook.com/savannahconstruction2015" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/@savcon_nz" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener">WordPress</a></li><li><a href="https://www.linkedin.com/company/savannah-construction-ltd/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="community-support.html" >Community Support</a></li></ul>
   </div>
   <div>
     <h2>Contact</h2>
-    <p><a href="https://maps.google.com/?q=26+Dick+Street+Cambridge" rel="noopener">26 Dick Street, Cambridge</a></p>
+    <p><a class="footer-contact-link" href="https://maps.google.com/?q=26+Dick+Street+Cambridge" target="_blank" rel="noopener"><span class="gold-icon" aria-hidden="true">⌂</span>26 Dick Street, Cambridge</a></p>
     <p><a href="tel:0800006007">0800 006 007</a></p>
     <p><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a></p>
   </div>
   <p class="footer-bottom">© <span data-year></span> Savannah Construction. All Rights Reserved.</p>
 </footer>
-<script src="js/cinema-coverflow.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

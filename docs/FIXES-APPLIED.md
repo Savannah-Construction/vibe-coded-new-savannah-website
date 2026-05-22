@@ -1,0 +1,17 @@
+# Fixes applied
+
+- Standardised page titles to `Savannah Construction | Page Name`.
+- Rebuilt spacing system using one page max width, consistent grid gaps and consistent section padding.
+- Removed scroll-trap slideshow behaviour and replaced it with static hover-highlight project grids.
+- Added zoom + thin gold border hover state to project, team, service and content cards.
+- Left-aligned the logo in the header.
+- Added Blog to the main navigation after Team.
+- Removed “Our Team” wording from navigation.
+- Added Connect with us section with map, Google review, live update cards, YouTube card, WordPress preview and consultation form.
+- Added front-end email validation and verification-code UI.
+- Added footer home icon and gold icon styling.
+- Added local accreditation badges for Master Builders, SiteWise Gold, SiteSafe and Licensed Building Practitioner support.
+- Made team cards equal height and aligned staff heads using consistent image ratios/object positioning.
+- Removed gold overlay/shadow styling from team imagery.
+- Added seamless dark page treatment and removed heavy section dividers.
+- Removed cinema/coverflow script references from pages.

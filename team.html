@@ -1,40 +1,70 @@
 <!doctype html>
-<html lang="en-NZ">
+<html lang="en-NZ" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team | Savannah Construction</title>
-  <meta name="description" content="Savannah Construction leadership, project and management team.">
+  <title>Savannah Construction | Team</title>
+  <meta name="description" content="Savannah Construction leadership and project team.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('savannah-theme');
+        document.documentElement.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }());
+  </script>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="site.webmanifest">
-  
 </head>
-<body>
-
+<body class="team">
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Savannah Construction home"><img src="img/backlogo.png" alt="Savannah Construction"></a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span>☰</button>
+  <a class="brand" href="index.html" aria-label="Savannah Construction home">
+    <img src="img/backlogo.png" alt="Savannah Construction">
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span aria-hidden="true">☰</span></button>
   <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="team.html">Team</a>
-    <a href="blog.html">Blog</a>
-    <a class="nav-cta" href="contact.html">Contact</a>
+    <a href="index.html" class="">Home</a>
+<a href="projects.html" class="">Projects</a>
+<a href="team.html" class="active">Team</a>
+<a href="blog.html" class="">Blog</a>
+<a href="contact.html" class="">Contact</a>
   </nav>
-  <div class="header-contact"><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a><a href="tel:0800006007">0800 006 007</a></div>
+  <div class="header-contact">
+    <div class="header-contact-links">
+      <a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a>
+      <a href="tel:0800006007">0800 006 007</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+      <span class="theme-icon-wrap" aria-hidden="true">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+          <path d="M20.3 15.6A8.3 8.3 0 0 1 8.4 3.7 8.7 8.7 0 1 0 20.3 15.6Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.2v2.2M12 19.6v2.2M4.4 4.4 6 6M18 18l1.6 1.6M2.2 12h2.2M19.6 12h2.2M4.4 19.6 6 18M18 6l1.6-1.6" />
+        </svg>
+      </span>
+    </button>
+  </div>
 </header>
 <main>
 
 <section class="page-hero team-hero">
-  <p class="eyebrow">Who We Are &amp; Our Approach</p>
-  <h1>Boots On The Ground.</h1>
-  <p class="lead">We operate as a complete main contractor and subcontractor across the commercial and residential sectors. Specialising in healthcare, retail and hospitality builds, we bring rigorous standards to every site.</p>
+  <div class="page-hero-inner">
+    <p class="eyebrow">Team</p>
+    <h1>Boots On The Ground.</h1>
+    <p class="lead">We operate as a complete main contractor and subcontractor across the commercial and residential sectors.</p>
+  </div>
 </section>
 <section class="section">
-  <div class="team-grid">
-    
-<article class="team-card">
+  <div class="section-heading">
+    <p class="eyebrow">People</p>
+    <h2>Our team</h2>
+  </div>
+  <div class="team-grid equal-grid"><article class="team-card">
   <img src="img/team/matt-bw.jpg" alt="Matt Mudgway" loading="lazy">
   <div>
     <p class="eyebrow">Director</p>
@@ -42,7 +72,6 @@
     <p><a href="mailto:matt@savannahconstruction.co.nz">matt@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/joe1.jpg" alt="Joe Tawha" loading="lazy">
   <div>
@@ -51,7 +80,6 @@
     <p><a href="mailto:joe@savannahconstruction.co.nz">joe@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/eddie-bw.jpg" alt="Eddie Alford" loading="lazy">
   <div>
@@ -60,7 +88,6 @@
     <p><a href="mailto:eddie@savannahconstruction.co.nz">eddie@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/andre-bw.jpg" alt="Andre Joli" loading="lazy">
   <div>
@@ -69,7 +96,6 @@
     <p><a href="mailto:andre@savannahconstruction.co.nz">andre@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/james-bw.png" alt="James Palmer" loading="lazy">
   <div>
@@ -78,7 +104,6 @@
     <p><a href="mailto:james@savannahconstruction.co.nz">james@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/kiel-bw.jpg" alt="Kiel Harrison" loading="lazy">
   <div>
@@ -87,7 +112,6 @@
     <p><a href="mailto:kiel@savannahconstruction.co.nz">kiel@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/bradley-bw.jpg" alt="Bradley Laird" loading="lazy">
   <div>
@@ -96,7 +120,6 @@
     <p><a href="mailto:bradley@savannahconstruction.co.nz">bradley@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/matija-bw.jpg" alt="Matija Miletic" loading="lazy">
   <div>
@@ -105,7 +128,6 @@
     <p><a href="mailto:matija@savannahconstruction.co.nz">matija@savannahconstruction.co.nz</a></p>
   </div>
 </article>
-
 <article class="team-card">
   <img src="img/team/lyn-bw.jpg" alt="Lyn Mudgway" loading="lazy">
   <div>
@@ -113,29 +135,30 @@
     <h2>Lyn Mudgway</h2>
     <p><a href="mailto:lyn@savannahconstruction.co.nz">lyn@savannahconstruction.co.nz</a></p>
   </div>
-</article>
-  </div>
+</article></div>
 </section>
-<section class="section split dark-panel">
-  <div><p class="eyebrow">Core Sectors</p><h2>Our Scope</h2></div>
+<section class="section split dark-panel smooth-panel">
+  <div>
+    <p class="eyebrow">Core Sectors</p>
+    <h2>Our Scope</h2>
+  </div>
   <div class="check-list">
-    <p><strong>Commercial</strong><br>Retail, Healthcare &amp; Hospitality</p>
-    <p><strong>Residential</strong><br>Multi-Unit &amp; Architectural</p>
-    <p><strong>Main Contracting</strong><br>End-to-End Delivery</p>
+    <p><strong>Commercial</strong><br>Retail, healthcare, education and hospitality.</p>
+    <p><strong>Residential</strong><br>Multi-unit and architectural residential work.</p>
+    <p><strong>Main Contracting</strong><br>End-to-end delivery with practical site leadership.</p>
   </div>
 </section>
-<section class="section cta-panel">
-  <h2>Join The Team +</h2>
+<section class="section cta-panel smooth-panel">
+  <h2>Join The Team</h2>
   <p>Send your CV to <a href="mailto:hiring@savannahconstruction.co.nz">hiring@savannahconstruction.co.nz</a> and we’ll get in touch.</p>
   <a class="button button-primary" href="contact.html">Contact Us</a>
 </section>
 
 </main>
-
 <footer class="site-footer">
   <div class="footer-brand">
     <img src="img/backlogo.png" alt="Savannah Construction">
-    <p>Award-winning Waikato construction company delivering premium property construction and building services.</p>
+    <p>Award-winning Waikato construction company delivering premium commercial and residential construction services.</p>
   </div>
   <div>
     <h2>Accreditations</h2>
@@ -147,24 +170,16 @@
   </div>
   <div>
     <h2>Connect with us</h2>
-    <ul>
-      <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
-      <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
-      <li><a href="https://savannahconstruction.wordpress.com/" rel="noopener">WordPress</a></li>
-      <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-    </ul>
+    <ul class="footer-links"><li><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@savcon.nz" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.facebook.com/savannahconstruction2015" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/@savcon_nz" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener">WordPress</a></li><li><a href="https://www.linkedin.com/company/savannah-construction-ltd/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="community-support.html" >Community Support</a></li></ul>
   </div>
   <div>
     <h2>Contact</h2>
-    <p><a href="https://maps.google.com/?q=26+Dick+Street+Cambridge" rel="noopener">26 Dick Street, Cambridge</a></p>
+    <p><a class="footer-contact-link" href="https://maps.google.com/?q=26+Dick+Street+Cambridge" target="_blank" rel="noopener"><span class="gold-icon" aria-hidden="true">⌂</span>26 Dick Street, Cambridge</a></p>
     <p><a href="tel:0800006007">0800 006 007</a></p>
     <p><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a></p>
   </div>
   <p class="footer-bottom">© <span data-year></span> Savannah Construction. All Rights Reserved.</p>
 </footer>
-<script src="js/cinema-coverflow.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

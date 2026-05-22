@@ -1,196 +1,520 @@
 <!doctype html>
-<html lang="en-NZ">
+<html lang="en-NZ" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Savannah Construction | Premium Commercial &amp; Residential</title>
-  <meta name="description" content="Award-winning Waikato builders delivering premium commercial and high-quality residential new builds across New Zealand.">
+  <title>Savannah Construction | Home</title>
+  <meta name="description" content="Award-winning Waikato builders delivering commercial and residential construction across New Zealand.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('savannah-theme');
+        document.documentElement.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }());
+  </script>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="site.webmanifest">
-  
 </head>
-<body>
-
+<body class="home">
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Savannah Construction home"><img src="img/backlogo.png" alt="Savannah Construction"></a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span>☰</button>
+  <a class="brand" href="index.html" aria-label="Savannah Construction home">
+    <img src="img/backlogo.png" alt="Savannah Construction">
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span aria-hidden="true">☰</span></button>
   <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="team.html">Team</a>
-    <a href="blog.html">Blog</a>
-    <a class="nav-cta" href="contact.html">Contact</a>
+    <a href="index.html" class="active">Home</a>
+<a href="projects.html" class="">Projects</a>
+<a href="team.html" class="">Team</a>
+<a href="blog.html" class="">Blog</a>
+<a href="contact.html" class="">Contact</a>
   </nav>
-  <div class="header-contact"><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a><a href="tel:0800006007">0800 006 007</a></div>
+  <div class="header-contact">
+    <div class="header-contact-links">
+      <a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a>
+      <a href="tel:0800006007">0800 006 007</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+      <span class="theme-icon-wrap" aria-hidden="true">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+          <path d="M20.3 15.6A8.3 8.3 0 0 1 8.4 3.7 8.7 8.7 0 1 0 20.3 15.6Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.2v2.2M12 19.6v2.2M4.4 4.4 6 6M18 18l1.6 1.6M2.2 12h2.2M19.6 12h2.2M4.4 19.6 6 18M18 6l1.6-1.6" />
+        </svg>
+      </span>
+    </button>
+  </div>
 </header>
 <main>
 
-<section class="hero">
-  <div class="hero-copy">
+<section class="hero home-hero">
+  <div class="hero-copy balanced-panel">
     <p class="eyebrow">Who We Are</p>
-    <h1>Award-winning Waikato builders delivering premium commercial and high-quality residential new builds across New Zealand.</h1>
+    <h1>Award-winning Waikato builders delivering premium commercial and high-quality commercial and residential new builds across New Zealand.</h1>
     <p class="lead">Build on Trust, Delivered with Precision.</p>
-    <div class="button-row">
+    <div class="button-row compact-buttons">
       <a class="button button-primary" href="projects.html">Our Projects</a>
       <a class="button button-secondary" href="contact.html">Company Portfolio</a>
     </div>
   </div>
 </section>
-
-<section class="section split">
-  <div>
+<section class="section black-section review-section">
+  <div class="section-heading centre">
     <p class="eyebrow">Client Feedback</p>
     <h2>Clear communication, dependable programming and workmanship second to none.</h2>
   </div>
-  <blockquote class="quote">
-    “I would just like to say how great it has been working with you and the team on the Carpentry package over the past few months. The team at Savannah have great work ethics and are really good to deal with, the quality and workmanship so far being second to none.”
-    <cite>Julie, Senior Project QS</cite>
-  </blockquote>
+  <div class="review-rotator" data-review-rotator>
+  <article class="review-slide active"><p class="review-text">Build on Trust, Delivered with Precision.</p><p class="review-source">Savannah Construction</p></article>
+  <article class="review-slide"><p class="review-text">“The team at Savannah have great work ethics and are really good to deal with.”</p><p class="review-source">Julie, Senior Project QS</p></article>
+  <article class="review-slide"><p class="review-text">“The quality and workmanship so far being second to none.”</p><p class="review-source">Julie, Senior Project QS</p></article>
+  <article class="review-slide"><p class="review-text">Clients regularly mention clear communication and dependable programming on complex commercial builds.</p><p class="review-source">Google Business profile, 5.0 average</p></article>
+</div>
 </section>
-
-<section class="section services-strip">
-  <article>
-    <img src="img/comicon.png" alt="Commercial construction icon" loading="lazy">
-    <h2>Commercial Construction</h2>
-  </article>
-  <article>
-    <img src="img/resicon.png" alt="Residential construction icon" loading="lazy">
-    <h2>Residential Construction</h2>
-  </article>
-  <article>
-    <img src="img/contactus.png" alt="Enquire now" loading="lazy">
-    <h2>Enquire Now</h2>
-  </article>
-</section>
-
-<section class="section">
+<section class="section services-strip equal-grid"><article class="service-card"><a href="projects.html"><img src="img/comicon.png" alt="Commercial construction icon" loading="lazy"><h3>Commercial Construction</h3><p>Retail, hospitality, healthcare, education and complex staged construction.</p></a></article>
+<article class="service-card"><a href="projects.html"><img src="img/resicon.png" alt="Residential construction icon" loading="lazy"><h3>Residential Construction</h3><p>High-quality residential and multi-unit projects with practical site control.</p></a></article>
+<article class="service-card"><a href="contact.html"><img src="img/contactus.png" alt="Enquire now" loading="lazy"><h3>Enquire Now</h3><p>Speak with Savannah early so scope, budget and programme risks are understood.</p></a></article></section>
+<section class="section selected-work-section">
   <div class="section-heading">
     <p class="eyebrow">Selected Works</p>
     <h2>Portfolio</h2>
   </div>
-  <div class="project-grid four">
-    <article class="project-card"><img src="img/commercial/tamahrmbcare/a.webp" alt="Tamahere Country Club" loading="lazy"><div class="project-card-body"><p class="eyebrow">Hospitality</p><h3>Tamahere Country Club</h3></div></article><article class="project-card"><img src="img/commercial/waikatothepa/a.jpg" alt="University of Waikato - The Pā" loading="lazy"><div class="project-card-body"><p class="eyebrow">Education</p><h3>University of Waikato - The Pā</h3></div></article><article class="project-card"><img src="img/commercial/novotelhamilton/a.jpg" alt="Novotel Hamilton - Extension" loading="lazy"><div class="project-card-body"><p class="eyebrow">Hospitality</p><h3>Novotel Hamilton - Extension</h3></div></article><article class="project-card"><img src="img/commercial/rotoruaaquatic/a.jpg" alt="Rotorua Aquatic Centre" loading="lazy"><div class="project-card-body"><p class="eyebrow">Recreation</p><h3>Rotorua Aquatic Centre</h3></div></article>
-  </div>
+  <div class="project-grid four equal-grid"><article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/tamahrmbcare/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Hospitality</p>
+      <h3>Project</h3>
+      <p class="client">Sanderson Group</p>
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/rotoruaaquatic/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Recreation</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/cambridgepools/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Recreation</p>
+      <h3>Project</h3>
+      <p class="client">Naylor Love</p>
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/silverdalestudios/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Residential</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article></div>
 </section>
-
-<section class="section stats-grid">
-  <article><strong>Waikato Region</strong><span>Active Coverage</span></article>
-  <article><strong>Accredited Builders</strong><span>Registered Master Builders and Licensed Building Practitioners</span></article>
-  <article><strong>ECI</strong><span>Early Contractor Involvement</span></article>
-  <article><strong>5.0</strong><span>Google Business Review average shown on the current site</span></article>
+<section class="section stats-grid equal-grid">
+  <article><span class="gold-icon" aria-hidden="true">●</span><strong>Waikato Region</strong><span>Active Coverage</span></article>
+  <article><span class="gold-icon" aria-hidden="true">●</span><strong>Accredited Builders</strong><span>Registered Master Builders and Licensed Building Practitioners</span></article>
+  <article><span class="gold-icon" aria-hidden="true">●</span><strong>ECI</strong><span>Early Contractor Involvement</span></article>
+  <article><span class="gold-icon" aria-hidden="true">●</span><strong>30+</strong><span>Completed Projects</span></article>
 </section>
-
-<section class="section cinema-scroll-section" id="cinemaScrollSection" aria-labelledby="archive-heading">
+<section class="section project-archive-preview">
   <div class="section-heading centre">
     <p class="eyebrow">The Archive</p>
-    <h2 id="archive-heading">Completed Projects</h2>
-    <p>Use the arrows to cycle through selected project images.</p>
+    <h2>Completed Projects</h2>
+    <p>Hover a card to highlight it. No scroll-trap carousel.</p>
   </div>
-  <div class="cinema-shell">
-    <button class="cinema-arrow cinema-arrow-left" type="button" id="cinemaArrowLeft" aria-label="Previous project">‹</button>
-    <div class="cinema-coverflow-viewport" id="cinemaCoverflowViewport" aria-live="polite">
-      <div class="cinema-track" id="cinemaTrack">
-        
-<article class="cinema-item" data-project-index="0">
-  <img src="img/commercial/tamahrmbcare/a.webp" alt="Tamahere Country Club" loading="lazy">
-  <span class="cinema-item-title">Tamahere Country Club</span>
-</article>
-
-<article class="cinema-item" data-project-index="1">
-  <img src="img/commercial/rotoruaaquatic/a.jpg" alt="Rotorua Aquatic Centre" loading="lazy">
-  <span class="cinema-item-title">Rotorua Aquatic Centre</span>
-</article>
-
-<article class="cinema-item" data-project-index="2">
-  <img src="img/commercial/cambridgepools/a.jpg" alt="Cambridge Pool" loading="lazy">
-  <span class="cinema-item-title">Cambridge Pool</span>
-</article>
-
-<article class="cinema-item" data-project-index="3">
-  <img src="img/commercial/silverdalestudios/a.jpg" alt="Silverdale Student Apartments" loading="lazy">
-  <span class="cinema-item-title">Silverdale Student Apartments</span>
-</article>
-
-<article class="cinema-item" data-project-index="4">
-  <img src="img/commercial/novotelhamilton/a.jpg" alt="Novotel Hamilton - Extension" loading="lazy">
-  <span class="cinema-item-title">Novotel Hamilton - Extension</span>
-</article>
-
-<article class="cinema-item" data-project-index="5">
-  <img src="img/commercial/texaschicken/a.webp" alt="Texas Chicken" loading="lazy">
-  <span class="cinema-item-title">Texas Chicken</span>
-</article>
-
-<article class="cinema-item" data-project-index="6">
-  <img src="img/commercial/bupastagetwo/a.jpg" alt="Bupa Stage 2 Care Facility – Renovation" loading="lazy">
-  <span class="cinema-item-title">Bupa Stage 2 Care Facility – Renovation</span>
-</article>
-
-<article class="cinema-item" data-project-index="7">
-  <img src="img/commercial/rototunahighschool/a.webp" alt="Rototuna Highschool" loading="lazy">
-  <span class="cinema-item-title">Rototuna Highschool</span>
-</article>
-
-<article class="cinema-item" data-project-index="8">
-  <img src="img/commercial/waikatothepa/a.jpg" alt="University of Waikato - The Pā" loading="lazy">
-  <span class="cinema-item-title">University of Waikato - The Pā</span>
-</article>
-
-<article class="cinema-item" data-project-index="9">
-  <img src="img/commercial/hopuhopusports/a.webp" alt="Hopuhopu Sports Pavilion" loading="lazy">
-  <span class="cinema-item-title">Hopuhopu Sports Pavilion</span>
-</article>
-
-<article class="cinema-item" data-project-index="10">
-  <img src="img/commercial/springhillprison/a.webp" alt="Spring Hill Prison" loading="lazy">
-  <span class="cinema-item-title">Spring Hill Prison</span>
-</article>
-
-<article class="cinema-item" data-project-index="11">
-  <img src="img/commercial/accbuilding/a.jpg" alt="ACC Building" loading="lazy">
-  <span class="cinema-item-title">ACC Building</span>
-</article>
-      </div>
+  <div class="project-grid archive equal-grid"><article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/tamahrmbcare/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Hospitality</p>
+      <h3>Project</h3>
+      <p class="client">Sanderson Group</p>
     </div>
-    <button class="cinema-arrow cinema-arrow-right" type="button" id="cinemaArrowRight" aria-label="Next project">›</button>
-  </div>
-  <p class="sr-only" id="cinemaCoverflowStatus"></p>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/rotoruaaquatic/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Recreation</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/cambridgepools/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Recreation</p>
+      <h3>Project</h3>
+      <p class="client">Naylor Love</p>
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/silverdalestudios/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Residential</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/novotelhamilton/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Hospitality</p>
+      <h3>Project</h3>
+      <p class="client">Naylor Love</p>
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/texaschicken/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Commercial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/bupastagetwo/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Healthcare</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/rototunahighschool/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Education</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/waikatothepa/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Education</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/hopuhopusports/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Community</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/springhillprison/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Public</p>
+      <h3>Project</h3>
+      <p class="client">Hawkins</p>
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/accbuilding/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Commercial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/gallery2.png" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Residential</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/lauristonvillas/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Retirement</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/alphastreet/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Mixed-use</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/victoriastreet/a.png" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Mixed-use</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/awaterrmbone/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Retirement</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/awaterrmbone/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Retirement</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/woolworthsotorohanga/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Retail</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/watchusecurity/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Commercial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/fonterradryerwall/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Industrial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/olamtokoroa/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Industrial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/anzbuilding/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Fit-out</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/mitreten/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Retail</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/tauharapower/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Industrial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/tehukathreepower/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Industrial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/kaipakiberries/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Commercial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/mahoestreet/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Residential</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/affconewoffice/a.webp" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Commercial</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article>
+<article class="project-card ">
+  <a class="card-link" href="projects.html" aria-label="View Project">
+    <img src="img/commercial/breakingbreadcafe/a.jpg" alt="Project" loading="lazy">
+    <div class="project-card-body">
+      <p class="eyebrow">Hospitality</p>
+      <h3>Project</h3>
+      
+    </div>
+  </a>
+</article></div>
 </section>
-
-<section class="section connect-panel">
-  <div>
-    <p class="eyebrow">Connect with us</p>
-    <h2>Google Business Review</h2>
-    <p class="rating">5.0 ★★★★★</p>
+<section class="section connect-section" id="connect">
+  <div class="section-heading centre">
+    <p class="eyebrow">Digital Channels</p>
+    <h2>Connect with us</h2>
   </div>
+  <div class="connect-layout">
+    <article class="connect-card map-card">
+      <iframe title="Map showing Savannah Construction office at 26 Dick Street, Cambridge" loading="lazy" src="https://www.google.com/maps?q=26%20Dick%20Street%2C%20Cambridge%2C%20New%20Zealand&z=15&output=embed"></iframe>
+      <div class="map-overlay">
+        <p class="eyebrow">Google Business Review</p>
+        <strong>5.0</strong>
+        <span>★★★★★</span>
+        <a class="button button-secondary" href="https://maps.google.com/?q=26+Dick+Street+Cambridge" target="_blank" rel="noopener">Open on Google Maps</a>
+      </div>
+    </article>
+    <article class="connect-card social-live-card">
+      <p class="eyebrow">Live Updates</p>
+      <h3>Latest digital channel activity</h3>
+      <div class="social-update-grid"><article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>1</span><strong>Latest Instagram update</strong><em>@savcon.nz</em></a></article>
+<article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>2</span><strong>Previous Instagram update</strong><em>@savcon.nz</em></a></article>
+<article class="social-update-card"><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener"><span>3</span><strong>Earlier Instagram update</strong><em>@savcon.nz</em></a></article></div>
+    </article>
+    <article class="connect-card media-card">
+      <p class="eyebrow">YouTube</p>
+      <h3>YouTube channel</h3>
+      <p>Watch recent project footage, site updates and company videos.</p>
+      <a class="button button-primary" href="https://www.youtube.com/@savcon_nz" target="_blank" rel="noopener">Open YouTube channel</a>
+    </article>
+    <article class="connect-card media-card wordpress-card">
+      <p class="eyebrow">WordPress</p>
+      <h3>Latest articles</h3>
+      <div class="mini-link-grid"><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>Behind the Story of The Pā, University of Waikato</strong><span>For developers and investors comparing Building Contractors Waikato, landmark projects often reveal more than finished architecture.</span></a><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>What Makes a Commercial Builder Reliable?</strong><span>Reliability is one of the most important factors in any commercial building project, yet it is also one of the hardest qualities to judge.</span></a><a class="mini-link-card" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener"><strong>How to Reduce Delays on a Multi-Unit Construction Project</strong><span>Delays on a multi-unit project rarely come from one major issue alone. More often, they come from smaller breakdowns in planning.</span></a></div>
+      <a class="button button-secondary" href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener">Open WordPress blog</a>
+    </article>
+    <form class="contact-form" data-consultation-form data-verification-endpoint="" action="mailto:info@savannahconstruction.co.nz" method="post" enctype="text/plain">
   <div>
-    <h2>YouTube channel and WordPress blog</h2>
-    <p>Follow site progress, team news and construction advice.</p>
-    <div class="button-row"><a class="button button-primary" href="https://www.youtube.com/" rel="noopener">Open YouTube channel</a><a class="button button-secondary" href="blog.html">Open WordPress blog</a></div>
+    <p class="eyebrow">Consultation</p>
+    <h2>Start Your Free Consultation</h2>
+    <p>Tell us about your project and we will get back to you shortly.</p>
+  </div>
+  <div class="oauth-row" aria-label="Optional sign-in shortcuts">
+    <button type="button" class="oauth-button" data-oauth="google"><span>G</span> Sign in to Google</button>
+    <button type="button" class="oauth-button" data-oauth="microsoft"><span>□</span> Sign in to Microsoft</button>
+  </div>
+  <div class="form-grid two">
+    <label>Name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Email <input type="email" name="email" autocomplete="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"></label>
+  </div>
+  <label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
+  <div class="verify-row">
+    <button type="button" class="button button-secondary verify-button" data-send-code>Send code</button>
+    <label class="verify-code-label">Verification code <input type="text" name="verification_code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" placeholder="6-digit code"></label>
+  </div>
+  <p class="form-note" data-verification-status>Email verification is ready for a server endpoint. In this static preview, the button shows a demo code.</p>
+  <label>Message <textarea name="message" rows="6" required></textarea></label>
+  <button class="button button-primary" type="submit">Send</button>
+</form>
   </div>
 </section>
-
-<section class="section contact-preview">
-  <div class="section-heading">
-    <p class="eyebrow">Start Your Free Consultation</p>
-    <h2>Tell us about your project and we will get back to you shortly.</h2>
+<section class="section accreditations-section">
+  <div class="section-heading centre">
+    <p class="eyebrow">Assurances</p>
+    <h2>Our Accreditations & Assurances</h2>
   </div>
-  <form class="contact-form" action="mailto:info@savannahconstruction.co.nz" method="post" enctype="text/plain">
-    <label>Name <input type="text" name="name" autocomplete="name"></label>
-    <label>Email <input type="email" name="email" autocomplete="email"></label>
-    <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
-    <label>Message <textarea name="message" rows="5"></textarea></label>
-    <button class="button button-primary" type="submit">Send</button>
-  </form>
+  <div class="badge-grid">
+    <img src="img/accreditations/master-builders.svg" alt="Master Builders">
+    <img src="img/accreditations/sitewise-gold.svg" alt="SiteWise Gold 2026/27">
+    <img src="img/accreditations/sitesafe.svg" alt="SiteSafe">
+    <img src="img/accreditations/lbp.svg" alt="Licensed Building Practitioner support">
+  </div>
+  <p class="insurance-pill">$20M Public Liability Insurance</p>
 </section>
 
 </main>
-
 <footer class="site-footer">
   <div class="footer-brand">
     <img src="img/backlogo.png" alt="Savannah Construction">
-    <p>Award-winning Waikato construction company delivering premium property construction and building services.</p>
+    <p>Award-winning Waikato construction company delivering premium commercial and residential construction services.</p>
   </div>
   <div>
     <h2>Accreditations</h2>
@@ -202,24 +526,16 @@
   </div>
   <div>
     <h2>Connect with us</h2>
-    <ul>
-      <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
-      <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
-      <li><a href="https://savannahconstruction.wordpress.com/" rel="noopener">WordPress</a></li>
-      <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-    </ul>
+    <ul class="footer-links"><li><a href="https://www.instagram.com/savcon.nz/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@savcon.nz" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.facebook.com/savannahconstruction2015" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/@savcon_nz" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://savannahconstruction.wordpress.com/" target="_blank" rel="noopener">WordPress</a></li><li><a href="https://www.linkedin.com/company/savannah-construction-ltd/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="community-support.html" >Community Support</a></li></ul>
   </div>
   <div>
     <h2>Contact</h2>
-    <p><a href="https://maps.google.com/?q=26+Dick+Street+Cambridge" rel="noopener">26 Dick Street, Cambridge</a></p>
+    <p><a class="footer-contact-link" href="https://maps.google.com/?q=26+Dick+Street+Cambridge" target="_blank" rel="noopener"><span class="gold-icon" aria-hidden="true">⌂</span>26 Dick Street, Cambridge</a></p>
     <p><a href="tel:0800006007">0800 006 007</a></p>
     <p><a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a></p>
   </div>
   <p class="footer-bottom">© <span data-year></span> Savannah Construction. All Rights Reserved.</p>
 </footer>
-<script src="js/cinema-coverflow.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
