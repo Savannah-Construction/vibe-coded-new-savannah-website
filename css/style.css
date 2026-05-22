@@ -464,7 +464,7 @@ textarea { resize: vertical; }
 html[data-theme="dark"] .review-section { color: var(--text); }
 .black-section .section-heading p:not(.eyebrow) { color: var(--text-soft); }
 .site-footer { background: transparent; }
-.site-footer .footer-brand img { background: var(--brand-charcoal); border-radius: 8px; padding: 4px; }
+
 .badge-grid img { background: var(--white-fixed); }
 .social-update-card a, .button-primary { color: var(--brand-black); }
 html[data-theme="dark"] .button-primary { color: var(--white-fixed); }
@@ -502,4 +502,76 @@ html[data-theme="dark"] .site-header { box-shadow: none; }
 @media (max-width: 760px) {
   .nav-toggle { grid-column: 2; }
   .header-contact { grid-column: 3; }
+}
+
+
+/* Mode-aware Savannah logo fix: the wordmark changes between black and white while the gold frame stays on-brand. */
+.logo-stack {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 54px;
+  flex: 0 0 auto;
+}
+.brand .logo-stack {
+  justify-self: start;
+}
+.theme-logo {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  object-fit: contain;
+  object-position: left center;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity .18s ease, transform .22s ease;
+}
+html[data-theme="light"] .theme-logo-light,
+html[data-theme="dark"] .theme-logo-dark {
+  opacity: 1;
+  transform: translateY(0);
+}
+html[data-theme="light"] .theme-logo-dark {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+html[data-theme="dark"] .theme-logo-light {
+  opacity: 0;
+  transform: translateY(4px);
+}
+.footer-brand .logo-stack {
+  width: 220px;
+  height: 74px;
+  margin-bottom: 16px;
+}
+.site-footer .footer-brand .logo-stack {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+html[data-theme="light"] .site-header {
+  background: rgba(255, 255, 255, .96);
+  color: var(--brand-black);
+}
+html[data-theme="dark"] .site-header {
+  background: rgba(21, 19, 19, .96);
+  color: var(--text);
+}
+html[data-theme="light"] .site-footer {
+  background: transparent;
+}
+html[data-theme="dark"] .site-footer {
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .brand .logo-stack { width: 200px; height: 50px; }
+}
+@media (max-width: 700px) {
+  .brand .logo-stack { width: 175px; height: 44px; }
+  .footer-brand .logo-stack { width: 190px; height: 64px; }
 }

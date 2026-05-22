@@ -1,6 +1,4 @@
-# Fixes applied
-
-- Standardised page titles to `Savannah Construction | Page Name`.
+# Fixes applied - Standardised page titles to `Savannah Construction | Page Name`.
 - Rebuilt spacing system using one page max width, consistent grid gaps and consistent section padding.
 - Removed scroll-trap slideshow behaviour and replaced it with static hover-highlight project grids.
 - Added zoom + thin gold border hover state to project, team, service and content cards.
