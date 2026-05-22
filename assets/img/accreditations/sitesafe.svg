@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" role="img" aria-label="SiteSafe">
+  <rect width="520" height="240" rx="30" fill="#ffffff"/>
+  <rect x="14" y="14" width="492" height="212" rx="24" fill="#231f20" stroke="#9b8255" stroke-width="6"/>
+  <text x="260" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="44" fill="#9b8255">SiteSafe</text>
+  <text x="260" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#ffffff">Safety Systems</text>
+</svg>

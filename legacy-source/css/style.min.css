@@ -1,13 +1,4 @@
-/*
- *	Resto by GetTemplates.co
- *	URL: https://gettemplates.co
- */
-@font-face {
-  font-family: 'Nasalization';
-  src: url('../Nasalization Rg.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
+/* Legacy source retained for reference. Missing third-party font reference removed. */
 
 html {
   overflow-x: hidden; }

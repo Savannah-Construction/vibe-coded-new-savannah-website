@@ -10,10 +10,28 @@ if (navToggle && siteNav) {
 
 const root = document.documentElement;
 const themeToggle = document.querySelector('[data-theme-toggle]');
+
+const updateThemeLogos = (theme, animate = true) => {
+  const logoSrc = theme === 'dark' ? 'logoDark' : 'logoLight';
+  document.querySelectorAll('img[data-logo-light][data-logo-dark]').forEach((logo) => {
+    const nextSrc = logo.dataset[logoSrc];
+    if (!nextSrc || logo.getAttribute('src') === nextSrc) return;
+    if (!animate) {
+      logo.setAttribute('src', nextSrc);
+      return;
+    }
+    logo.classList.add('logo-source-swapping');
+    window.setTimeout(() => {
+      logo.setAttribute('src', nextSrc);
+      logo.classList.remove('logo-source-swapping');
+    }, 90);
+  });
+};
 const setTheme = (theme, persist = true) => {
   const safeTheme = theme === 'dark' ? 'dark' : 'light';
   root.classList.add('theme-switching');
   root.setAttribute('data-theme', safeTheme);
+  updateThemeLogos(safeTheme, persist);
   if (persist) {
     try { localStorage.setItem('savannah-theme', safeTheme); } catch (error) {}
   }
