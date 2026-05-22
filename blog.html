@@ -1,10 +1,20 @@
 <!doctype html>
-<html lang="en-NZ">
+<html lang="en-NZ" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Savannah Construction | Blog</title>
   <meta name="description" content="Savannah Construction WordPress blog links and article summaries.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('savannah-theme');
+        document.documentElement.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }());
+  </script>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="site.webmanifest">
@@ -23,8 +33,21 @@
 <a href="contact.html" class="">Contact</a>
   </nav>
   <div class="header-contact">
-    <a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a>
-    <a href="tel:0800006007">0800 006 007</a>
+    <div class="header-contact-links">
+      <a href="mailto:info@savannahconstruction.co.nz">info@savannahconstruction.co.nz</a>
+      <a href="tel:0800006007">0800 006 007</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+      <span class="theme-icon-wrap" aria-hidden="true">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+          <path d="M20.3 15.6A8.3 8.3 0 0 1 8.4 3.7 8.7 8.7 0 1 0 20.3 15.6Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.2v2.2M12 19.6v2.2M4.4 4.4 6 6M18 18l1.6 1.6M2.2 12h2.2M19.6 12h2.2M4.4 19.6 6 18M18 6l1.6-1.6" />
+        </svg>
+      </span>
+    </button>
   </div>
 </header>
 <main>

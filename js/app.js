@@ -7,6 +7,36 @@ if (navToggle && siteNav) {
   });
 }
 
+
+const root = document.documentElement;
+const themeToggle = document.querySelector('[data-theme-toggle]');
+const setTheme = (theme, persist = true) => {
+  const safeTheme = theme === 'dark' ? 'dark' : 'light';
+  root.classList.add('theme-switching');
+  root.setAttribute('data-theme', safeTheme);
+  if (persist) {
+    try { localStorage.setItem('savannah-theme', safeTheme); } catch (error) {}
+  }
+  if (themeToggle) {
+    const nextLabel = safeTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    themeToggle.setAttribute('aria-label', nextLabel);
+    themeToggle.setAttribute('title', nextLabel);
+  }
+  window.clearTimeout(window.__savannahThemeTimer);
+  window.__savannahThemeTimer = window.setTimeout(() => root.classList.remove('theme-switching'), 260);
+};
+
+try {
+  setTheme(localStorage.getItem('savannah-theme') === 'dark' ? 'dark' : 'light', false);
+} catch (error) {
+  setTheme('light', false);
+}
+
+themeToggle?.addEventListener('click', () => {
+  const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
