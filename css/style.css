@@ -505,20 +505,20 @@ html[data-theme="dark"] .site-header { box-shadow: none; }
 }
 
 
-/* Mode-aware Savannah logo fix: the wordmark changes between black and white while the gold frame stays on-brand. */
+/* Mode-aware Savannah logo fix: one image element only. JS swaps the source, so duplicate logos cannot render. */
 .logo-stack {
   position: relative;
   display: block;
   width: 220px;
   height: 54px;
   flex: 0 0 auto;
+  overflow: hidden;
 }
 .brand .logo-stack {
   justify-self: start;
 }
 .theme-logo {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
@@ -526,20 +526,11 @@ html[data-theme="dark"] .site-header { box-shadow: none; }
   margin: 0 !important;
   object-fit: contain;
   object-position: left center;
-  opacity: 0;
-  transform: translateY(0);
-  transition: opacity .18s ease, transform .22s ease;
-}
-html[data-theme="light"] .theme-logo-light,
-html[data-theme="dark"] .theme-logo-dark {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity .16s ease, transform .18s ease;
 }
-html[data-theme="light"] .theme-logo-dark {
-  opacity: 0;
-  transform: translateY(-4px);
-}
-html[data-theme="dark"] .theme-logo-light {
+.theme-logo.logo-source-swapping {
   opacity: 0;
   transform: translateY(4px);
 }
