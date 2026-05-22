@@ -1,28 +1,12 @@
-# Original code review
-
-## Supplied zip contents
-
-The supplied zip contained:
-
-- `css/style.min.css`
+# Original code review ## Supplied zip contents The supplied zip contained: - `css/style.min.css`
 - `js/app.min.js`
 - `js/cinema-coverflow.js`
 - `vendor/` libraries
 - `img/` assets
 - `logs/` and `traffic.db`
 - raw `.CR3` files
-- a large `.mp4`
-
-It did not contain complete HTML page files such as `index.html`, `projects.html`, `team.html` or `contact.html`.
-
-## What this build changes
-
-- Creates the missing HTML files.
+- a large `.mp4` It did not contain complete HTML page files such as `index.html`, `projects.html`, `team.html` or `contact.html`. ## What this build changes - Creates the missing HTML files.
 - Keeps the original `/img/...` asset path style.
 - Includes the supplied `cinema-coverflow.js` and matching markup.
 - Keeps legacy supplied CSS/JS/vendor under `legacy-source/` for review only.
-- Excludes logs, raw camera files, databases and video from the GitHub-ready build.
-
-## Missing original dependency
-
-The old `css/style.min.css` references `../Nasalization Rg.otf`, but that font was not present in the supplied zip. The new CSS does not depend on that missing font.
+- Excludes logs, raw camera files, databases and video from the GitHub-ready build. ## Missing original dependency The old `css/style.min.css` references `../Nasalization Rg.otf`, but that font was not present in the supplied zip. The new CSS does not depend on that missing font.

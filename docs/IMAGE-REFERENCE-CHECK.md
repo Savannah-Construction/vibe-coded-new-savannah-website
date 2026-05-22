@@ -1,4 +1,1 @@
-# Image reference check
-
-All local image references in root HTML and CSS resolve.
-
+# Image reference check All local image references in root HTML and CSS resolve. 

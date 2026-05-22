@@ -1,15 +1,7 @@
-# Image reference audit
-
-This package includes only images referenced by the current rebuilt code and compatibility paths needed to match the live site/original image path structure.
-
-Referenced image paths found: 83
+# Image reference audit This package includes only images referenced by the current rebuilt code and compatibility paths needed to match the live site/original image path structure. Referenced image paths found: 83
 Images copied/optimised: 83
 Missing at source: 0
-Missing after copy: 0
-
-## Referenced paths included
-
-- `img/back.png` — OK — 418.0 KB
+Missing after copy: 0 ## Referenced paths included - `img/back.png` — OK — 418.0 KB
 - `img/backlogo.png` — OK — 19.3 KB
 - `img/c1.jpg` — OK — 377.7 KB
 - `img/comicon.png` — OK — 34.2 KB
